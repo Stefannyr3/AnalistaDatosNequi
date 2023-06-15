@@ -47,3 +47,5 @@ Si los datos se llegan a incrementar en 100x tendria que establecer múltiples m
 
 Si la base de datos necesitara ser accedida por mas de 100 usuarios funcionales necesitaria tener en cuenta que cada uno de los usuarios pueda acceder a los datos de su interés y hacer uso necesario de la información.
 Seguridad: La arquitectura de datos debe considerar los protocolos de seguridad para proteger la información de la empresa, reconocer las amenazas y mantener la confidencialidad de los datos sensibles.
+
+Si se requiere una analitica en tiempo real las herramientas en la nube que facilitarian la integración y clasificación de datos de la arquitectura analítica. Por ejemplo, si un usuario implementa nueva información a la base de datos, gracias a la configuración de automatización podria modificarla y adecuarla en minutos.
