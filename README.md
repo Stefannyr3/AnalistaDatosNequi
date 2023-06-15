@@ -43,5 +43,7 @@ Modelo de pronostico seria un modelo ideal para este tipo de datos ya que se req
 se tendran los mismos sintomas e indices de muerte en futuros pacientes para esta enfermedad, donde con esta cantidad de datos y resultados 
 se podran cladificar mas facilmente los pacientes con mayor prioridad para ser atendidos dada una emergencia o advertencia medica.
 
+Si los datos se llegan a incrementar en 100x tendria que establecer múltiples modelos, rutas de acción, operaciones de consulta y modificación de datos, entre muchos otros procesos que requieren de una gestión flexible para manipular correctamente estos datos.
+
 Si la base de datos necesitara ser accedida por mas de 100 usuarios funcionales necesitaria tener en cuenta que cada uno de los usuarios pueda acceder a los datos de su interés y hacer uso necesario de la información.
 Seguridad: La arquitectura de datos debe considerar los protocolos de seguridad para proteger la información de la empresa, reconocer las amenazas y mantener la confidencialidad de los datos sensibles.
