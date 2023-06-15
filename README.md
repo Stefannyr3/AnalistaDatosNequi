@@ -43,8 +43,6 @@ Modelo de pronostico seria un modelo ideal para este tipo de datos ya que se req
 se tendran los mismos sintomas e indices de muerte en futuros pacientes para esta enfermedad, donde con esta cantidad de datos y resultados 
 se podran cladificar mas facilmente los pacientes con mayor prioridad para ser atendidos dada una emergencia o advertencia medica.
 
-Si los datos se llegan a incrementar en 100x tendria que establecer múltiples modelos, rutas de acción, operaciones de consulta y modificación de datos, entre muchos otros procesos que requieren de una gestión flexible para manipular correctamente estos datos.
-
 Si los datos se incrementaran en 100 veces:
 Si los datos se incrementan en 100 veces, se requerirían ajustes en la infraestructura y en las técnicas de procesamiento de datos. Aquí hay algunas consideraciones clave: Escalado de infraestructura: Sería necesario aumentar la capacidad de almacenamiento y procesamiento para manejar el aumento en el volumen de datos.
 Optimización de consultas: Con un aumento significativo en los datos, es importante optimizar las consultas para garantizar un rendimiento óptimo. Esto puede incluir el diseño e implementación de índices adecuados, la segmentación de datos y la utilización de técnicas de optimización de consultas.
