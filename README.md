@@ -32,9 +32,10 @@ Intubado: si el paciente estaba conectado al ventilador.
 UCI: Indica si el paciente había sido ingresado en una Unidad de Cuidados Intensivos.
 Fecha de fallecimiento: Si el paciente falleció indique la fecha de fallecimiento, y 9999-99-99 en caso contrario.
 
-Limpieza de datos
+Limpieza de datos.
 Cargar dataset, convertirlo a dataframe para realizar limpieza de datos.
 Se toma la columna de la fecha de muerte y se realiza limpieza de datos ya que hay este valor 9999-99-99 en donde no ha fallecido este paciente
 por tanto se remplaza por Nan, valor nulo en python, en la columna de edad se remplazan los pacientes que tienen edad mayor de 100 por Nan
-y las demas columnas se verifica que sean numericas, se toman los valores de 1:True y 2:False , se cambian los demas valores a Nan
+y las demas columnas se verifica que sean numericas, se toman los valores de 1:True y 2:False , se cambian los demas valores a Nan.
+Se utilizo PyCharm Community Edition para trabajar con Python sobre el archivo .csv y de esta manera poder realizar la limpieza de datos.
 
