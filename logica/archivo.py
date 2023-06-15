@@ -1,15 +1,25 @@
 import pandas as pd
 import numpy as np
+#convertir .csv a un dataframe
 dataframe = pd.read_csv('CovidData.csv',delimiter=';')
+"""tomar los datos de la columna date_died con los datos 9999-99-99 el cual
+es un dato que indica que no hay fecha de fallecimiento y se transformara a nan 
+variable nula python"""
 dataframe['DATE_DIED'] = dataframe['DATE_DIED'].replace('9999-99-99', np.nan)
+"""tomar los datos que sean 1 o 2 y se transformara a True o False para mirar que datos 
+son verdaderos o falsos y los datos que no tengan este valor se remplazara por nan variable
+nula en python"""
 replacement_dict = {1: True, 2: False}
 dataframe['INTUBED'] = dataframe['INTUBED'].replace(replacement_dict, regex=False)
 dataframe.loc[~dataframe['INTUBED'].isin([True, False]), 'INTUBED'] = np.nan
+"""Se revisa si todos los datos de todas las columnas son numericos y se procede a cambiar 
+los datos que tengan valores de 99 a nan variable nula en python"""
 is_numeric = pd.to_numeric(dataframe['AGE'], errors='coerce').notnull().all()
 if is_numeric:
     print("All values in the column are numbers.")
 else:
     print("There are non-numeric values in the column.")
+"""Se toman los datos de la columna age y se cambian por nan los datos que sean mayores a 100"""
 dataframe.loc[dataframe['AGE'] > 100, 'AGE'] = np.nan
 has_numbers_greater_than_100 = (dataframe['AGE'] > 100).any()
 
