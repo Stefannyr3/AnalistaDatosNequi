@@ -45,7 +45,16 @@ se podran cladificar mas facilmente los pacientes con mayor prioridad para ser a
 
 Si los datos se llegan a incrementar en 100x tendria que establecer múltiples modelos, rutas de acción, operaciones de consulta y modificación de datos, entre muchos otros procesos que requieren de una gestión flexible para manipular correctamente estos datos.
 
-Si la base de datos necesitara ser accedida por mas de 100 usuarios funcionales necesitaria tener en cuenta que cada uno de los usuarios pueda acceder a los datos de su interés y hacer uso necesario de la información.
-Seguridad: La arquitectura de datos debe considerar los protocolos de seguridad para proteger la información de la empresa, reconocer las amenazas y mantener la confidencialidad de los datos sensibles.
+Si los datos se incrementaran en 100 veces:
+Si los datos se incrementan en 100 veces, se requerirían ajustes en la infraestructura y en las técnicas de procesamiento de datos. Aquí hay algunas consideraciones clave: Escalado de infraestructura: Sería necesario aumentar la capacidad de almacenamiento y procesamiento para manejar el aumento en el volumen de datos.
+Optimización de consultas: Con un aumento significativo en los datos, es importante optimizar las consultas para garantizar un rendimiento óptimo. Esto puede incluir el diseño e implementación de índices adecuados, la segmentación de datos y la utilización de técnicas de optimización de consultas.
+Uso de técnicas de procesamiento distribuido: Para procesar grandes volúmenes de datos de manera eficiente, sería beneficioso emplear técnicas de procesamiento distribuido, como el procesamiento por lotes o el procesamiento en tiempo real, según los requisitos del caso de uso específico.
 
 Si se requiere una analitica en tiempo real las herramientas en la nube que facilitarian la integración y clasificación de datos de la arquitectura analítica. Por ejemplo, si un usuario implementa nueva información a la base de datos, gracias a la configuración de automatización podria modificarla y adecuarla en minutos.
+
+Si las tuberías de procesamiento de datos deben ejecutarse diariamente en una ventana de tiempo específica, es importante asegurarse de que la infraestructura y el flujo de trabajo estén diseñados para cumplir con este requisito. Aquí hay algunas consideraciones relevantes:
+Programación y orquestación de tareas: Sería necesario utilizar herramientas de orquestación de tareas, para programar y ejecutar las tuberías de procesamiento en la ventana de tiempo especificada.
+Ajuste de rendimiento: Dado que las tuberías se ejecutarían en un tiempo limitado, se debe prestar atención a la optimización del rendimiento de las operaciones de procesamiento. Esto puede incluir la optimización de consultas, la paralelización de tareas y la optimización del uso de recursos.
+Monitoreo y alertas: Es importante implementar un sistema de monitoreo para asegurarse de que las tuberías se ejecuten correctamente dentro de la ventana de tiempo especificada. Además, se pueden configurar alertas para detectar y solucionar rápidamente cualquier problema que pueda surgir durante la ejecución.
+
+
