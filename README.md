@@ -39,3 +39,9 @@ por tanto se remplaza por Nan, valor nulo en python, en la columna de edad se re
 y las demas columnas se verifica que sean numericas, se toman los valores de 1:True y 2:False , se cambian los demas valores a Nan.
 Se utilizo PyCharm Community Edition para trabajar con Python sobre el archivo .csv y de esta manera poder realizar la limpieza de datos.
 
+Modelo de pronostico seria un modelo ideal para este tipo de datos ya que se requieren estos datos para pronosticar si en un futuro 
+se tendran los mismos sintomas e indices de muerte en futuros pacientes para esta enfermedad, donde con esta cantidad de datos y resultados 
+se podran cladificar mas facilmente los pacientes con mayor prioridad para ser atendidos dada una emergencia o advertencia medica.
+
+Si la base de datos necesitara ser accedida por mas de 100 usuarios funcionales necesitaria tener en cuenta que cada uno de los usuarios pueda acceder a los datos de su interés y hacer uso necesario de la información.
+Seguridad: La arquitectura de datos debe considerar los protocolos de seguridad para proteger la información de la empresa, reconocer las amenazas y mantener la confidencialidad de los datos sensibles.
